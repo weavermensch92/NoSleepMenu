@@ -1,0 +1,24 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan public source
+        run: bash Scripts/check-public-source.sh
+      - name: Test
+        run: swift test
+      - name: Build universal packages
+        run: bash Scripts/package.sh
+      - name: Check actual app bundle
+        run: build/NoSleepMenu.app/Contents/MacOS/NoSleepMenu --self-check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: NoSleepMenu-macOS
+          path: dist/

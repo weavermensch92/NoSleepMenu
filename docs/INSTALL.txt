@@ -1,0 +1,25 @@
+NoSleepMenu 1.0.0 — macOS 13 or later, Apple silicon / Intel
+
+한국어
+1. 실행 중인 NoSleepMenu가 있다면 메뉴에서 종료하세요.
+2. NoSleepMenu.app을 Applications 폴더로 드래그하세요.
+3. 응용 프로그램 폴더에서 NoSleepMenu를 실행하세요.
+4. 메뉴바 항목 → 설정…에서 언어와 사용량 표시를 선택하세요.
+
+.pkg 설치 파일을 사용하면 /Applications/NoSleepMenu.app에 설치됩니다.
+설치 자체는 자동 실행이나 전원 설정을 바꾸지 않습니다.
+
+이 빌드는 Developer ID 서명·Apple 공증이 없는 개발 배포판일 수 있습니다.
+다운로드한 앱이 차단되면 출처와 체크섬을 확인하고 macOS의 개인정보 보호 및
+보안 화면에 표시되는 앱별 승인 절차를 사용하거나 소스에서 직접 빌드하세요.
+보안 기능을 전역으로 끌 필요는 없습니다.
+
+English
+1. Quit any running copy of NoSleepMenu.
+2. Drag NoSleepMenu.app to Applications and open it.
+3. Open its menu-bar menu → Settings… to choose language and providers.
+
+The .pkg installs /Applications/NoSleepMenu.app. Installation does not change
+power settings or enable launch at login. This build may be ad-hoc signed and
+not notarized; verify the source and checksums before using macOS's per-app
+approval flow or build from source. No global security changes are required.

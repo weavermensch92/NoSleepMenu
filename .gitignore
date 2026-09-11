@@ -1,0 +1,14 @@
+.DS_Store
+.build/
+.swiftpm/
+build/
+dist/
+*.dmg
+*.pkg
+*.zip
+*.xcarchive
+*.log
+.env
+.env.*
+*.p12
+*.mobileprovision
